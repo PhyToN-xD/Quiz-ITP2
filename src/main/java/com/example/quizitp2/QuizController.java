@@ -3,7 +3,7 @@ package com.example.quizitp2;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class QuizController {
   @FXML
   private Label welcomeText;
 
