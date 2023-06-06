@@ -26,4 +26,7 @@ public class Quiz {
 
   }
 
+  public void onInput(String letter) {
+
+  }
 }
