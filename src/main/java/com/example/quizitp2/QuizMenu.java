@@ -45,10 +45,10 @@ public class QuizMenu extends Application {
     primaryStage.centerOnScreen();
     oldStage = primaryStage;
 
-    scene.setOnKeyPressed( e -> keyPressed(e) );
+    //scene.setOnKeyPressed( e -> keyPressed(e) );
   }
 
-  private static void keyPressed(KeyEvent e) {
+  /*private static void keyPressed(KeyEvent e) {
     KeyCode key = e.getCode();
     String keyInput = key.name();
     if (keyInput.matches("[a-zA-Z]")) {
@@ -59,7 +59,7 @@ public class QuizMenu extends Application {
       }
     }
   }
-
+*/
   public static void main(String[] args) {
     launch();
   }

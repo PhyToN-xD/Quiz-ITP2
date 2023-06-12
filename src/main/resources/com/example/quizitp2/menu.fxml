@@ -26,7 +26,7 @@
          <children>
             <Button fx:id="btnMenuReady" mnemonicParsing="false" onAction="#onBtnMenu" prefHeight="103.0" prefWidth="201.0" text="Ready" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="usernameMenu" prefHeight="41.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your Username" textAlignment="CENTER" wrappingWidth="201.13671875" GridPane.columnIndex="1" />
+            <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your Username" textAlignment="CENTER" wrappingWidth="201.13671875" GridPane.columnIndex="1" />
          </children>
       </GridPane>
    </children>

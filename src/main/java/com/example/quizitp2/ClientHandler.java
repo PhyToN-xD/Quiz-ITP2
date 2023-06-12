@@ -24,11 +24,16 @@ public class ClientHandler implements Runnable {
       Thread receaveNames = new Thread(()->{
         try {
           username = in.readLine();
-          while (clientSocket.isConnected()) {
-            System.out.println(username + " | has connected");
-            usernameList.add(username);
-            username = in.readLine();
-          }
+            while (clientSocket.isConnected()) {
+              if (usernameList.contains(username)) {
+                out.println("username already exists");
+              }else {
+                System.out.println(username + " | has connected");
+                out.println("connected");
+                usernameList.add(username);
+                username = in.readLine();
+              }
+            }
         } catch (IOException e) {
           closeEverything(clientSocket, in, out);
         }
