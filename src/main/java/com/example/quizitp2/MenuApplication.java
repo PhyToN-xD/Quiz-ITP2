@@ -18,9 +18,6 @@ public class MenuApplication {
   Button btnMenuReady;
   @FXML
   TextField usernameMenu;
-  @FXML
-  Text text;
-
 
   public void onBtnMenu() {
     String username = usernameMenu.getText();
@@ -38,14 +35,14 @@ public class MenuApplication {
         if (msg.contains("connected")){
 
         } else if (msg.contains("username already exists")){
-          text.setText("Usernmae already exists");
+          System.out.println("Usernmae already exists");
         }
       } catch (IOException e) {
         e.printStackTrace();
       }
 
     } catch (IOException e) {
-      text.setText("Irgendetwas ist Schiefgelaufen");
+      System.out.println("Irgendetwas ist Schiefgelaufen");
       e.printStackTrace();
     }
   }
