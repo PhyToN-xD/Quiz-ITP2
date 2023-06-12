@@ -35,12 +35,10 @@ public class MenuApplication {
       try {
         String msg;
         msg = in.readLine();
-        while (msg!=null) {
-          if (msg.contains("connected")){
+        if (msg.contains("connected")){
 
-          } else if (msg.contains("username already exists")){
-            text.setText("Usernmae already exists");
-          }
+        } else if (msg.contains("username already exists")){
+          text.setText("Usernmae already exists");
         }
       } catch (IOException e) {
         e.printStackTrace();
