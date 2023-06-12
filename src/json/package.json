@@ -1,6 +1,6 @@
 {
   "questions": [
-    {"id": 1, "frage": "Wie oft ist Kark zu spät", "awnser":  "Immer"},
-    {"id": 2, "frage": "Wer ist schuld wenn etwas nicht funktioniert", "awnser":  "Herr Bauer"}
+    {"id": 1, "frage": "Wie oft ist Kark zu spät", "answer":  "Immer"},
+    {"id": 2, "frage": "Wer ist schuld wenn etwas nicht funktioniert", "answer":  "Herr Bauer"}
   ]
 }
