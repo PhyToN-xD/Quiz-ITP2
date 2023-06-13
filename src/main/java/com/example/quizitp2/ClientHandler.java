@@ -11,8 +11,9 @@ public class ClientHandler implements Runnable {
 
   static List<String> usernameList = new ArrayList<>();
 
-  public ClientHandler(Socket clientSocket) {
+  public ClientHandler(Socket clientSocket, String username) {
     this.clientSocket = clientSocket;
+    this.username = username;
   }
 
   @Override
@@ -23,17 +24,11 @@ public class ClientHandler implements Runnable {
 
       Thread receaveNames = new Thread(()->{
         try {
-          username = in.readLine();
             while (clientSocket.isConnected()) {
-              if (usernameList.contains(username)) {
-                out.println("username already exists");
-                usernameList.remove(username);
-              }else {
-                System.out.println(username + " | has connected | " + clientSocket.getInetAddress());
-                out.println("connected");
-                usernameList.add(username);
-                username = in.readLine();
-              }
+              System.out.println(username + " | has connected | " + clientSocket.getInetAddress());
+              out.println("connected");
+              usernameList.add(username);
+              username = in.readLine();
             }
         } catch (IOException e) {
           closeEverything(clientSocket, in, out);

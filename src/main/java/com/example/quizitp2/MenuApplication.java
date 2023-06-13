@@ -21,9 +21,10 @@ public class MenuApplication {
 
   public void onBtnMenu() {
     String username = usernameMenu.getText();
+    //String username = "TestClient1";
 
     try {
-      Socket clientSocket = new Socket("127.0.0.1", 5000);
+      Socket clientSocket = new Socket("localhost", 5000);
       BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
       PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 
@@ -35,7 +36,7 @@ public class MenuApplication {
         if (msg.contains("connected")){
           QuizMenu.ChangeScenes("quiz.fxml", "Quiz");
 
-        } else if (msg.contains("username already exists")){
+        } else if (msg.contains("uae")){
           System.out.println("Usernmae already exists");
         }
       } catch (IOException e) {

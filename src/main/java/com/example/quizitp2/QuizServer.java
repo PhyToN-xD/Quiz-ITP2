@@ -19,20 +19,22 @@ public class QuizServer {
       PrintWriter out;
       final Scanner sc = new Scanner(System.in);
 
-      try {
-        while (!serverSocket.isClosed()) {
-          Socket clientSocket = serverSocket.accept();
-          System.out.println("A new client connected!");
-          ClientHandler clientHandler = new ClientHandler(clientSocket);
+      while (!serverSocket.isClosed()) {
+        Socket clientSocket = serverSocket.accept();
+        in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        out = new PrintWriter(clientSocket.getOutputStream(), true);
+        String username = in.readLine();
+        if (ClientHandler.usernameList.contains(username)) {
+          out.println("uae");
+        } else {
+          System.out.println("A new client tried connecting!");
+          ClientHandler clientHandler = new ClientHandler(clientSocket, username);
           Thread thread = new Thread(clientHandler);
           thread.start();
         }
-      } catch (IOException e) {
-        throw new RuntimeException(e);
       }
-
     } catch (IOException e) {
-      e.printStackTrace();
+      throw new RuntimeException(e);
     }
   }
 }

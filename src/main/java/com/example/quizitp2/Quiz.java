@@ -21,9 +21,6 @@ public class Quiz {
       System.out.println(questionArray.getJSONObject(i).get("frage"));
     }
 
-
-
-
   }
 
   public void onInput(String letter) {
