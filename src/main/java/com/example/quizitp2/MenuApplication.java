@@ -33,6 +33,7 @@ public class MenuApplication {
         String msg;
         msg = in.readLine();
         if (msg.contains("connected")){
+          QuizMenu.ChangeScenes("quiz.fxml", "Quiz");
 
         } else if (msg.contains("username already exists")){
           System.out.println("Usernmae already exists");

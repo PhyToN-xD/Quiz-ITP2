@@ -27,8 +27,9 @@ public class ClientHandler implements Runnable {
             while (clientSocket.isConnected()) {
               if (usernameList.contains(username)) {
                 out.println("username already exists");
+                usernameList.remove(username);
               }else {
-                System.out.println(username + " | has connected");
+                System.out.println(username + " | has connected | " + clientSocket.getInetAddress());
                 out.println("connected");
                 usernameList.add(username);
                 username = in.readLine();
@@ -47,7 +48,7 @@ public class ClientHandler implements Runnable {
 
   public void removeClientHandler() {
     usernameList.remove(username);
-    System.out.println("SERVER: " + username + " disconnected");
+    System.out.println(username + " | disconnected");
   }
 
   public void closeEverything(Socket socket, BufferedReader in, PrintWriter out) {
