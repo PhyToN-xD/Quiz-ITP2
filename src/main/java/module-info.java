@@ -1,6 +1,8 @@
 module com.example.quizitp2 {
   requires javafx.controls;
   requires javafx.fxml;
+  requires org.json;
+  requires javafx.media;
 
 
   opens com.example.quizitp2 to javafx.fxml;
