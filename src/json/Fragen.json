@@ -1,0 +1,14 @@
+{
+  "questions": [
+    {"id": 1, "frage": "Wie oft ist Kark zu spät?", "rightAnswer":  "Immer", "wrongAnswers": ["nie, er ist immer pünktlich", "von Zeit zu Zeit", "erst einmal"]},
+    {"id": 2, "frage": "Wer ist schuld wenn etwas nicht funktioniert?", "rightAnswer":  "Herr Bauer", "wrongAnswers": ["REWO", "Kark", "es funktioniert immer alles"]},
+    {"id": 3, "frage": " Wiso wird der C116 überwacht? ", "rightAnswer":  " ", "wrongAnswers": [" ", " ", " "]},
+    {"id": 4, "frage": "Wie benotet Lovas Mitarbeit?", "rightAnswer":  "Rollen eines Würfels", "wrongAnswers": ["beschwören einer höheren Macht", "durch genaue Analyse des Unterrichtverhlaten jedes Schuelers", "Sie liest nach im Horoskop"]},
+    {"id": 5, "frage": "Was gehöhrt zu den 4 Werten von SCRUM?", "rightAnswer":  "Zusammenarbeit mit dem Kunden", "wrongAnswers": ["Befolgen des Plans", "Prozesse und Werkzeuge", "Interaktionen vermeiden"]},
+    {"id": 6, "frage": "Welche Rolle gehöhrt zum agilen Projektmanagment?", "rightAnswer":  "Developer-Team", "wrongAnswers": ["Basedrum", "Projektmanager", "SCRUM"]},
+    {"id": 7, "frage": "Wann/ Wie oft geschieht das Daily SRUM", "rightAnswer":  "einmal pro Tag", "wrongAnswers": ["5 mal pro Sekunde", "jeden zweiten Vollmond", "jedes Jahr wenn die ersten Narzissen blühen"]},
+    {"id": 8, "frage": "Was ist dieses SCRUM?", "rightAnswer":  "eine agile Projektmanagmentmethode", "wrongAnswers": ["eine Art Salat", "eine neue social Media Platform", "das lateine Wort für Kanban"]},
+    {"id": 9, "frage": "Was ist dieses Kanban?", "rightAnswer":  "eine weitere agile Projektmanagmentmethode", "wrongAnswers": ["eine Art Dosenöffner", "das neuste Produkt von Cisco", "ein Inkrement von SCRUM"]},
+    {"id": 10, "frage": "Was ist dieses Trello?", "rightAnswer":  "Es ist ein auf Kanban basierender Aufgaben-Verwaltungs-Onliendienst", "wrongAnswers": ["ein bewustseinsändernder Tee", "die neuste evolution von MS Teams", "eine Gruppe von Musikinstrumenten aus dem Mittelalter"]}
+  ]
+}
